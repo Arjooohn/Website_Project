@@ -1,0 +1,338 @@
+<!-- MENU PAGE -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Simple Kitchen</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- LOGO -->
+    <link rel="icon" href="cook_logo.png" type="image/icon type"> 
+
+    <!-- NAV BAR -->
+    <link rel="stylesheet" href="background_styles_ex4.css">
+    <link rel="stylesheet" href="styles_ex4.css">
+    <script src="script.js" defer></script>
+
+    <!-- SOCIALS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+   
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="brand-logo"><a href="Juacalla_ex_4_main.html"><img src="cook_logo.png" alt="logo" height="55" width="55"></a></div>
+            <div class="brand-title">Simple Kitchen</div>
+            <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+            <ul>
+                <li><a href="Juacalla_ex_4_main.html">Home</a></li>
+                <li><a href="Juacalla_ex_4_booking.html">Booking</a></li>
+                <li><a href="Juacalla_ex_4_menu.html">Menu</a></li>
+                <li><a href="Juacalla_ex_4_contact.html">Contact</a></li>
+            </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="jumbotron text-center">
+        <div class="ptext">
+            <span class="border">Menu</span>
+        </div>
+    </div>
+
+    <section class="sec sec-bg2">
+        <h5>A Simple Menu for a Simple Kitchen and a Simple Appetite</h5>
+        <p class="subtext">
+            At Simple Kitchen, we're serving up more than just your ordinary home-cooked meals. In fact, Simple Kitchen's Famous Triple Glazed Chicken
+            is one of our unexpected specialties. Reminiscent of butcher shops back in the day, each slow-smoked, sizzling prime chop measures seven-fingers high.
+        </p>
+    </section>
+
+   
+
+   <div class="container" style="padding: 5%;">
+        <div class="row">
+            <div class="col-sm-4">
+                <h3><strong>Main Dishes</strong></h3>
+                <p>A simple main dish would surely make any simple person satisfied.</p>
+                <ul style="font-weight: 800;">
+                    <li>Simple Fried Chicken</li>
+                    <li>Smoked Steak</li>
+                    <li>Favorite Pizza</li>
+                    <li>Slow Cooker BBQ Ribs</li>
+                    <li>Simply Vegetarian</li>
+                </ul>
+            </div>
+            <div class="col-sm-4">
+                <h3><strong>Soups</strong></h3>
+                <p>A simple complimentary meal for a simple main dish.</p>
+                <ul style="font-weight: 800;">
+                    <li>French Onion Soup</li>
+                    <li>Simple Chicken Soup</li>
+                    <li>Clam Chowder</li>
+                    <li>Lobster Bisque</li>
+                    <li>Veggie Chili</li>
+                </ul>
+            </div>
+            <div class="col-sm-4">
+                <h3><strong>Beverages </strong></h3>        
+                <p>A simple drink that comes with your simple meal.</p>
+                <ul style="font-weight: 800;">
+                    <li>Simple Honey Iced Tea</li>
+                    <li>Blue Moon</li>
+                    <li>Sakura Lemon</li>
+                    <li>Citrus Sensation</li>
+                    <li>Green Garden</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <section class="sec sec-bg1" style="display: inline-block; align-items: center;">
+        <h3><strong>Simple Kitchen</strong></h3>
+
+        <div class="w3-container w3-padding-32" id="projects">
+            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Menu</h3>
+        </div>
+        
+        <div class="w3-row-padding, row">
+            <div class="w3-col l3 m6 w3-margin-bottom, column">
+                <div class="w3-display-container">
+                    <div class="w3-display-topleft w3-black w3-padding">Simple Fried Chicken</div>
+                    <img src="chicken.jpg" alt="Simple Fried Chicken" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom, column">
+                <div class="w3-display-container">
+                    <div class="w3-display-topleft w3-black w3-padding">Favorite Pizza</div>
+                    <img src="pizza.jpg" alt="Favorite Pizza" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom, column">
+                <div class="w3-display-container">
+                    <div class="w3-display-topleft w3-black w3-padding">Slow Cooker BBQ Ribs</div>
+                    <img src="ribs.jpg" alt="Slow Cooker BBQ Ribs" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom, column">
+                <div class="w3-display-container">
+                    <div class="w3-display-topleft w3-black w3-padding">Simply Vegetarian</div>
+                    <img src="salad.jpg" alt="Simply Vegetarian" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+                </div>
+            </div>
+        </div>
+            
+        <div class="w3-row-padding, row">
+            <div class="w3-col l3 m6 w3-margin-bottom, column">
+                <div class="w3-display-container">
+                    <div class="w3-display-topleft w3-black w3-padding">French Onion Soup</div>
+                    <img src="onion soup.jpg" alt="French Onion Soup" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom, column">
+                <div class="w3-display-container">
+                    <div class="w3-display-topleft w3-black w3-padding">Simple Chicken Soup</div>
+                    <img src="chicken soup.jpg" alt="Simple Chicken Soup" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom, column">
+                <div class="w3-display-container">
+                    <div class="w3-display-topleft w3-black w3-padding">Clam Chowder</div>
+                    <img src="chowder.jpg" alt="Clam Chowder" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom, column">
+                <div class="w3-display-container">
+                    <div class="w3-display-topleft w3-black w3-padding">Lobster Bisque</div>
+                    <img src="lobster.jpg" alt="Lobster Bisque" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+                </div>
+            </div>
+        </div>
+
+    </section>
+    
+    <!-- MODAL -->
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+      
+            <div class="mySlides">
+                <div class="numbertext">1 / 8</div>
+                <img src="chicken.jpg" style="width:100%">
+            </div>
+          
+            <div class="mySlides">
+                <div class="numbertext">2 / 8</div>
+                <img src="pizza.jpg" style="width:100%">
+            </div>
+          
+            <div class="mySlides">
+                <div class="numbertext">3 / 8</div>
+                <img src="ribs.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 8</div>
+                <img src="salad.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">5 / 8</div>
+                <img src="onion soup.jpg" style="width:100%">
+            </div>
+          
+            <div class="mySlides">
+                <div class="numbertext">6 / 8</div>
+                <img src="chicken soup.jpg" style="width:100%">
+            </div>
+          
+            <div class="mySlides">
+                <div class="numbertext">7 / 8</div>
+                <img src="chowder.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">8 / 8</div>
+                <img src="lobster.jpg" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+      
+            <div class="float">
+                <div class="column" style="margin-top: 2%;">
+                    <img class="demo cursor" src="chicken.jpg" style="width:100%" onclick="currentSlide(1)" alt="Simple Fried Chicken">
+                </div>
+                <div class="column" style="margin-top: 2%;">
+                    <img class="demo cursor" src="pizza.jpg" style="width:100%" onclick="currentSlide(2)" alt="Favorite Pizza">
+                </div>
+                <div class="column" style="margin-top: 2%;">
+                    <img class="demo cursor" src="ribs.jpg" style="width:100%" onclick="currentSlide(3)" alt="Slow Cooker BBQ Ribs">
+                </div>
+                <div class="column" style="margin-top: 2%;">
+                    <img class="demo cursor" src="salad.jpg" style="width:100%" onclick="currentSlide(4)" alt="Simply Vegetarian">
+                </div>
+
+                <div class="column" style="margin-top: 2%;">
+                    <img class="demo cursor" src="onion soup.jpg" style="width:100%" onclick="currentSlide(5)" alt="French Onion Soup">
+                </div>
+                <div class="column" style="margin-top: 2%;">
+                    <img class="demo cursor" src="chicken soup.jpg" style="width:100%" onclick="currentSlide(6)" alt="Simple Chicken Soup">
+                </div>
+                <div class="column" style="margin-top: 2%;">
+                    <img class="demo cursor" src="chowder.jpg" style="width:100%" onclick="currentSlide(7)" alt="Clam Chowder">
+                </div>
+                <div class="column" style="margin-top: 2%;">
+                    <img class="demo cursor" src="lobster.jpg" style="width:100%" onclick="currentSlide(8)" alt="Lobster Bisque">
+                </div>
+            </div>
+            
+
+
+
+
+
+        </div>
+    </div>
+
+
+<!-- SCRIPT -->
+<script>
+    function openModal() {
+      document.getElementById("myModal").style.display = "block";
+    }
+    
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
+    
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+</script>
+
+
+
+<footer class="footer">
+    <div class="cont">
+        <div class="rw">
+            <div class="footer-cl">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="Juacalla_ex_4_main.html">about us</a></li>
+                    <li><a href="Juacalla_ex_4_menu.html">menu</a></li>
+                </ul>
+            </div>
+            <div class="footer-cl">
+                <h4>Get Help</h4>
+                <ul>
+                    <li><a href="Juacalla_ex_4_contact.html">FAQ</a></li>
+                    <li><a href="Juacalla_ex_4_contact.html">contact</a></li>
+                    <li><a href="Juacalla_ex_4_contact.html">inquiries</a></li>
+                </ul>
+            </div>
+            <div class="footer-cl">
+                <h4>Booking</h4>
+                <ul>
+                    <li><a href="Juacalla_ex_4_booking.html">Reservations</a></li>
+                    <li><a href="Juacalla_ex_4_booking.html">Catering</a></li>
+                </ul>
+            </div>
+            <div class="footer-cl">
+                <h4>Follow Us</h4>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>
